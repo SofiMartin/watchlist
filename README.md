@@ -27,14 +27,14 @@ Estado global : Custom hook (useWatchlist) para gestionar la lista de reproducci
 # 📂 Estructura del proyecto
 
 pokemon-movie-watchlist/
-├── public/               # Archivos públicos (imágenes, favicon, etc.)
+├── public/               
 ├── src/
-│   ├── components/       # Componentes reutilizables (Header, MovieCard, etc.)
-│   ├── hooks/            # Custom hooks (useWatchlist)
-│   ├── App.js            # Componente principal de la aplicación
-│   ├── index.js          # Punto de entrada de la aplicación
-│   └── styles/           # Estilos globales (si los hay)
-├── package.json          # Dependencias y scripts del proyecto
-└── README.md             # Documentación del proyecto
+│   ├── components/      
+│   ├── hooks/            
+│   ├── App.js           
+│   ├── index.js          
+│   └── styles/          
+├── package.json         
+└── README.md             
 
 
