@@ -51,32 +51,8 @@ const Home = () => {
           Películas Disponibles
         </h2>
         
-        {/* Grid de películas */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {movies.map((movie) => (
-            <div
-              key={movie.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
-            >
-              <img 
-                src={movie.image} 
-                alt={movie.title} 
-                className="w-full h-56 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  {movie.title}
-                </h3>
-                <button
-                  onClick={() => addToWatchlist(movie)}
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-600 hover:to-purple-700 transition duration-300"
-                >
-                  Agregar a Watchlist
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Usar MovieList */}
+        <MovieList movies={movies} onAdd={addToWatchlist} />
       </div>
 
       <Footer />
