@@ -21,8 +21,9 @@ const Header = ({ onOpenWatchlist }) => (
         {/* Íconos */}
         <MagnifyingGlass
           size={24}
-          className="text-gray-200 hover:text-white cursor-pointer transition duration-300"
+          className="text-gray-200 hover:text-white cursor-pointer transition duration-300 transform hover:scale-110"
         />
+
         <UserCircle
           size={24}
           className="text-gray-200 hover:text-white cursor-pointer transition duration-300"

@@ -1,4 +1,4 @@
-import { Trash } from "phosphor-react"; 
+import { Trash } from "phosphor-react";
 
 const WatchlistModal = ({ watchlist, onClose, onRemove }) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 transition-opacity duration-300">
@@ -12,7 +12,10 @@ const WatchlistModal = ({ watchlist, onClose, onRemove }) => (
         ) : (
           <ul>
             {watchlist.map((movie) => (
-              <li key={movie.id} className="flex justify-between items-center mb-4">
+              <li
+                key={movie.id}
+                className="flex justify-between items-center mb-4"
+              >
                 <span className="text-gray-800 text-lg">{movie.title}</span>
                 <button
                   onClick={() => onRemove(movie.id)}
